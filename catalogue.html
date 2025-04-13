@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wooden Door Luxury</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
+    <h1 class="text-xl font-bold">WoodenDoorLuxury</h1>
+    <nav>
+      <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+        <li><a href="about.html" class="hover:text-black">About</a></li>
+        <li><a href="catalogue.html" class="hover:text-black">Catalogue</a></li>
+        <li><a href="customOrders.html" class="hover:text-black">Custom Orders</a></li>
+        <li><a href="contactUs.html" class="hover:text-black">Contact Us</a></li>
+        <li><a href="gallery.html" class="bg-black text-white rounded-full px-4 py-2 hover:text-black">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    // JavaScript for toggling the mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Page Header -->
+  <section class="text-center py-12 px-4 bg-gray-50">
+    <h2 class="text-4xl font-bold mb-2">Our Collection</h2>
+    <p class="text-gray-600 max-w-xl mx-auto">Explore our handcrafted doors and elegant furniture designed for modern and traditional homes alike.</p>
+  </section>
+
+  <!-- Filters and Sorting -->
+  <section class="flex flex-wrap justify-between items-center px-6 md:px-20 py-4 bg-white border-b">
+    <div class="flex items-center space-x-3">
+      <label for="category" class="text-sm font-semibold">Category:</label>
+      <select id="category" class="border rounded px-3 py-1 text-sm focus:outline-none">
+        <option value="all">All</option>
+        <option value="doors">Doors</option>
+        <option value="tables">Tables</option>
+        <option value="chairs">Chairs</option>
+      </select>
+    </div>
+    <div class="flex items-center space-x-3">
+      <label for="sort" class="text-sm font-semibold">Sort by:</label>
+      <select id="sort" class="border rounded px-3 py-1 text-sm focus:outline-none">
+        <option value="popular">Most Popular</option>
+        <option value="priceLowHigh">Price: Low to High</option>
+        <option value="priceHighLow">Price: High to Low</option>
+        <option value="newest">Newest</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6 md:px-20 py-10">
+    <!-- Door 1 -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/1.jpg" alt="Modern Walnut Door" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Modern Walnut Door</h3>
+        <p class="text-gray-600 text-sm mb-2">Sleek door crafted from premium walnut wood with matte finish.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$350</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chair -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/2.jpg" alt="Scandinavian Chair" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Scandinavian Chair</h3>
+        <p class="text-gray-600 text-sm mb-2">Comfort meets style with this lightweight, clean-line chair.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$120</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/3.jpg" alt="Rustic Dining Table" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Rustic Dining Table</h3>
+        <p class="text-gray-600 text-sm mb-2">Beautiful handmade table perfect for family meals and hosting.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$550</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Door 2 -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/4.jpg" alt="Classic Interior Door" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Classic Interior Door</h3>
+        <p class="text-gray-600 text-sm mb-2">Classic design with rich texture — ideal for traditional homes.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$300</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bench -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/5.jpg" alt="Outdoor Bench" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Outdoor Bench</h3>
+        <p class="text-gray-600 text-sm mb-2">Durable bench built for both comfort and garden aesthetics.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$210</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coffee Table -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/6.jpg" alt="Coffee Table" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Coffee Table</h3>
+        <p class="text-gray-600 text-sm mb-2">Low-profile table with beautiful grain patterns for living rooms.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$180</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sliding Door -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/7.jpg" alt="Sliding Barn Door" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Sliding Barn Door</h3>
+        <p class="text-gray-600 text-sm mb-2">Space-saving with a rustic charm, ideal for tight spaces or modern farms.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$420</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wardrobe -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/8.jpg" alt="Custom Wardrobe" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Custom Wardrobe</h3>
+        <p class="text-gray-600 text-sm mb-2">Fully customizable wardrobes to fit your room and storage needs.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$620</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bookshelf -->
+    <div class="bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition">
+      <img src="images/9.jpg" alt="Bookshelf Unit" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Bookshelf Unit</h3>
+        <p class="text-gray-600 text-sm mb-2">Open-shelving design perfect for showcasing books and décor.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-black">$290</span>
+          <button class="bg-black text-white text-sm px-3 py-1 rounded hover:bg-gray-800 transition">Inquire</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Load More Button -->
+  <div class="text-center mb-16">
+    <button id="loadMoreBtn" class="px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition">Load More</button>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="bg-gray-100 text-center py-12">
+    <h3 class="text-xl font-bold mb-2">Need something custom?</h3>
+    <p class="text-gray-600 mb-4">We specialize in custom designs tailored to your space and style.</p>
+    <a href="custom-orders.html" class="bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition">Request Custom Order</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 WoodenDoorLuxury • All rights reserved.
+  </footer>
+
+  <!-- JS for filtering (basic simulation) -->
+  <script>
+    document.getElementById('category').addEventListener('change', function() {
+      alert("This would trigger a filter in a real app."); // Replace with dynamic filtering logic later
+    });
+
+    document.getElementById('sort').addEventListener('change', function() {
+      alert("This would trigger sorting logic.");
+    });
+
+    document.getElementById('loadMoreBtn').addEventListener('click', function() {
+      alert("Load more products from backend or data file...");
+    });
+  </script>
+
+</body>
+</html>

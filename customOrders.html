@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Orders - Door & Furniture Co.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4 text-center font-semibold text-xl">
+    Custom Furniture Orders
+  </header>
+
+  <!-- Intro Section -->
+  <section class="max-w-3xl mx-auto px-4 py-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Your Vision, Our Craft</h2>
+    <p class="text-gray-600">Need something unique? Fill out the form below and let's build your perfect door, table, or furniture piece just for your space.</p>
+  </section>
+
+  <!-- Form Section -->
+  <section class="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-md">
+    <form id="customOrderForm" class="space-y-6">
+      <div>
+        <label class="block font-medium">Full Name</label>
+        <input type="text" name="name" required class="mt-1 w-full border rounded px-4 py-2 focus:ring-2 ring-black" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Email Address</label>
+        <input type="email" name="email" required class="mt-1 w-full border rounded px-4 py-2 focus:ring-2 ring-black" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Phone Number</label>
+        <input type="tel" name="phone" class="mt-1 w-full border rounded px-4 py-2 focus:ring-2 ring-black" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Type of Furniture</label>
+        <select name="type" required class="mt-1 w-full border rounded px-4 py-2 focus:ring-2 ring-black">
+          <option value="">-- Select --</option>
+          <option value="door">Door</option>
+          <option value="table">Table</option>
+          <option value="chair">Chair</option>
+          <option value="bed">Bed Frame</option>
+          <option value="wardrobe">Wardrobe</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium">Dimensions or Preferences</label>
+        <input type="text" name="dimensions" placeholder="e.g. 6ft x 3ft, Teak Wood" class="mt-1 w-full border rounded px-4 py-2 focus:ring-2 ring-black" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Upload Sketch (Optional)</label>
+        <input type="file" name="sketch" accept="image/*" class="mt-1 w-full border rounded px-4 py-2" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Additional Details</label>
+        <textarea name="message" rows="4" placeholder="Tell us more about your custom request..." class="mt-1 w-full border rounded px-4 py-2 focus:ring-2 ring-black"></textarea>
+      </div>
+
+      <div>
+        <button type="submit" class="w-full bg-black text-white py-3 rounded hover:bg-gray-800 transition">
+          Submit Custom Order
+        </button>
+      </div>
+
+      <p id="confirmationMsg" class="text-green-600 text-center hidden">Thank you! Your request has been sent.</p>
+    </form>
+  </section>
+
+  <!-- JS for basic confirmation -->
+  <script>
+    document.getElementById('customOrderForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('confirmationMsg').classList.remove('hidden');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

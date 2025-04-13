@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wooden Door Luxury</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
+    <h1 class="text-xl font-bold">WoodenDoorLuxury</h1>
+    <nav>
+      <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+        <li><a href="about.html" class="hover:text-black">About</a></li>
+        <li><a href="catalogue.html" class="hover:text-black">Catalogue</a></li>
+        <li><a href="customOrders.html" class="hover:text-black">Custom Orders</a></li>
+        <li><a href="contactUs.html" class="hover:text-black">Contact Us</a></li>
+        <li><a href="gallery.html" class="bg-black text-white rounded-full px-4 py-2 hover:text-black">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    // JavaScript for toggling the mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4 bg-gray-50">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Crafted with Purpose. Built to Last.</h2>
+    <p class="text-lg max-w-2xl mx-auto text-gray-600">At WoodenDoorLuxury, we blend timeless craftsmanship with modern design to create furniture that turns houses into homes.</p>
+  </section>
+
+  <!-- Our Story -->
+  <section class="px-6 md:px-20 py-12 grid md:grid-cols-2 gap-10 items-center">
+    <img src="https://source.unsplash.com/600x400/?craftsman,wood" alt="Craftsmanship" class="rounded-lg shadow" />
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Our Story</h3>
+      <p class="text-gray-600 leading-relaxed">
+        Founded in 2010 in a small workshop, WoodenDoorLuxury began as a passion project for a carpenter with a vision. Today, we’ve grown into a premium brand known for our commitment to quality, sustainability, and customer care — delivering not just doors, but statements.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission & Values -->
+  <section class="bg-gray-100 py-16 px-6 md:px-20 text-center">
+    <h3 class="text-2xl font-bold mb-4">Our Mission & Core Values</h3>
+    <p class="text-gray-600 max-w-xl mx-auto mb-8">We’re on a mission to bring lasting beauty into people’s lives. Our values reflect what we stand for:</p>
+    <div class="grid md:grid-cols-3 gap-6 text-left max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+        <h4 class="text-lg font-semibold mb-2">Craftsmanship</h4>
+        <p class="text-gray-600 text-sm">We combine traditional techniques with modern design for unmatched results.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+        <h4 class="text-lg font-semibold mb-2">Integrity</h4>
+        <p class="text-gray-600 text-sm">We’re honest about what we do and proud of what we make.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+        <h4 class="text-lg font-semibold mb-2">Sustainability</h4>
+        <p class="text-gray-600 text-sm">Every piece we craft respects nature and the future we’re shaping together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section class="py-16 px-6 md:px-20">
+    <h3 class="text-2xl font-bold text-center mb-10">How We Work</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-5xl mb-3 text-gray-400">🧱</div>
+        <h4 class="font-semibold mb-2">Design & Consultation</h4>
+        <p class="text-sm text-gray-600">We listen, sketch, and dream with you — turning vision into blueprint.</p>
+      </div>
+      <div>
+        <div class="text-5xl mb-3 text-gray-400">🪵</div>
+        <h4 class="font-semibold mb-2">Material & Craft</h4>
+        <p class="text-sm text-gray-600">Premium wood, handled with care by skilled hands — every cut with purpose.</p>
+      </div>
+      <div>
+        <div class="text-5xl mb-3 text-gray-400">🚚</div>
+        <h4 class="font-semibold mb-2">Delivery & Installation</h4>
+        <p class="text-sm text-gray-600">We bring it to life in your space — on time, hassle-free.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-black text-white py-12 text-center">
+    <h4 class="text-2xl font-bold mb-3">Want to bring your space to life?</h4>
+    <p class="mb-6 text-gray-300">Let’s collaborate on your next custom door or furniture piece.</p>
+    <a href="contact.html" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Get in Touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 WoodenDoorLuxury • All rights reserved.
+  </footer>
+
+</body>
+</html>
